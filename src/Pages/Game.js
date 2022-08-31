@@ -1,24 +1,23 @@
-import { Center, Flex, Text } from '@chakra-ui/react'
-import { React, useEffect, useState} from 'react'
-import {useParams} from "react-router-dom";
-import axios from "axios"
+import { Center, Flex } from '@chakra-ui/react'
+import { React} from 'react'
+// import axios from "axios"
 
 function Game() {
-  const { link } = useParams();
+  // const { link } = useParams();
 
-  const [mainInfos, setMainInfos] = useState();
-  const [detailInfos, setDetailInfos] = useState();
+  // const [mainInfos, setMainInfos] = useState();
+  // const [detailInfos, setDetailInfos] = useState();
 
-  useEffect(()=>{
-    axios.get(`http://localhost:3000/gamesMain/game/${link}`)
-        .then(res => {
-          console.log(res)
-          setMainInfos(res.data);
-        })
-        .catch(err => {
-            console.log(err)
-    });
-  }, [link])
+  // useEffect(()=>{
+  //   axios.get(`http://localhost:3000/gamesMain/game/${link}`)
+  //       .then(res => {
+  //         console.log(res)
+  //         setMainInfos(res.data);
+  //       })
+  //       .catch(err => {
+  //           console.log(err)
+  //   });
+  // }, [link])
 
 
 
